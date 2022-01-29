@@ -19,7 +19,7 @@ function ShoppingList({ items }) {
     }
   }); 
 
-  const foodList = itemsToDisplay.map((item) => (
+  const itemList = itemsToDisplay.map((item) => (
     <Item key={item.id} name={item.name} category={item.category} />
   )); 
   
@@ -38,7 +38,7 @@ function ShoppingList({ items }) {
         </select>
       </div>
       <ul className="Items">
-        {foodList}
+        {itemList}
       </ul>
     </div>
   );
